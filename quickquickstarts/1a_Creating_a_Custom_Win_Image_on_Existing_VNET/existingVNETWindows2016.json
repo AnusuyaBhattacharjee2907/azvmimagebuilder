@@ -5,9 +5,7 @@
       "imageTemplateName": {
         "type": "string"
         },
-        "api-version": {
-          "type": "string"
-        },
+        
         "svclocation": {
             "type": "string"
         }
@@ -21,7 +19,7 @@
       {
         "name": "[parameters('imageTemplateName')]",
         "type": "Microsoft.VirtualMachineImages/imageTemplates",
-        "apiVersion": "[parameters('api-version')]",
+        "apiVersion": "2019-05-01-preview",
         "location": "[parameters('svclocation')]",
         "dependsOn": [],
         "tags": {
