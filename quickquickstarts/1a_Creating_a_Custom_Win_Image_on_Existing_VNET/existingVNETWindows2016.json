@@ -105,7 +105,7 @@
                     "runOutputName": "<runOutputName>",
                     "artifactTags": {
                         "source": "azVmImageBuilder",
-                        "baseosimg": "windows2019"
+                        "baseosimg": "windows20196
                     }
                 }
             ]
