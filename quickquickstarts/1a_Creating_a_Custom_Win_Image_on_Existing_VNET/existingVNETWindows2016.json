@@ -2,13 +2,8 @@
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-      "imageTemplateName": {
-        "type": "string"
-        },
-        
-        "svclocation": {
-            "type": "string"
-        }
+      
+      
     },
     
     "variables": {
@@ -17,10 +12,10 @@
 
     "resources": [
       {
-        "name": "[parameters('imageTemplateName')]",
+        "name": "window2016VnetTemplate03",
         "type": "Microsoft.VirtualMachineImages/imageTemplates",
         "apiVersion": "2019-05-01-preview",
-        "location": "[parameters('svclocation')]",
+        "location": "westus2",
         "dependsOn": [],
         "tags": {
             "imagebuilderTemplate": "AzureVMImageBuilderVNET",
